@@ -5,35 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects - Tran Quoc Thang</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background-color: #fff;
-      padding: 20px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-    }
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .projects-container {
+    .projects-page {
+      background-color: #e8ded2;
       padding: 60px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
+      min-height: 100vh;
     }
-    .projects-container h1 {
+    .projects-page h1 {
       text-align: center;
-      margin-bottom: 40px;
       font-size: 36px;
+      margin-bottom: 40px;
     }
     .project-list {
       display: flex;
@@ -47,6 +29,7 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      text-align: left;
     }
     .project-card h3 {
       margin-top: 0;
@@ -56,45 +39,63 @@
       color: #2f56ff;
       font-weight: bold;
     }
-    .back-home {
-      display: block;
-      margin: 40px auto 0;
-      padding: 10px 20px;
-      width: fit-content;
-      background-color: #2f56ff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="logo">Tran Quoc Thang</div>
+<header class="site-header">
+  <div class="logo">
+    <i class="fas fa-user"></i>
+    <span><strong>Tran Quoc Thang</strong> <span class="slash">/</span> <span class="title">Data Engineer</span></span>
+  </div>
+  <nav class="nav-menu">
+    <a href="index.html">ABOUT ME</a>
+    <a href="index.html#resume">RESUME</a>
+    <a href="projects.html" class="active">PROJECT</a>
+    <a href="index.html#learn">LEARN</a>
+  </nav>
 </header>
 
-<div class="projects-container">
+<main class="projects-page">
   <h1>My Projects</h1>
   <div class="project-list">
     <div class="project-card">
       <h3>ETL Stock Data Pipeline</h3>
       <p>Thu thập dữ liệu cổ phiếu từ Polygon.io, xử lý với Airflow và lưu trữ vào S3 & DuckDB.</p>
-      <a href="https://github.com/thangtran1805/Big_Data_ELT_project" target="_blank">🔗 Xem chi tiết</a>
+      <a href="https://github.com/thangtran1805/etl-stock-project" target="_blank">🔗 Xem chi tiết</a>
     </div>
     <div class="project-card">
       <h3>YouTube Trending ETL</h3>
       <p>ETL dữ liệu trending YouTube theo quốc gia, phân tích và lưu trữ vào DuckDB, visualize bằng Superset.</p>
       <a href="https://github.com/thangtran1805/youtube-trending-etl" target="_blank">🔗 Xem chi tiết</a>
     </div>
-    <!-- Bạn có thể thêm nhiều project-card khác -->
+    <!-- Thêm project-card khác nếu cần -->
   </div>
+</main>
 
-  <a href="index.html" class="back-home">← Back to Home</a>
-</div>
+<footer>
+  <hr>
+  <div class="footer-info">
+    <div>
+      <strong>Call</strong>
+      090 822 1175
+    </div>
+    <div>
+      <strong>Write</strong>
+      thangtranquoc1805@gmail.com
+    </div>
+    <div>
+      <strong>Follow</strong><br>
+      <a href="https://www.facebook.com/tran.thang.785971?locale=vi_VN" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://zalo.me/0908221175" target="_blank"><i class="fas fa-comment-dots"></i></a>
+      <a href="https://github.com/thangtran1805" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/th%E1%BA%AFng-tr%E1%BA%A7n-qu%E1%BB%91c-69807a344/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+  <div class="copyright">
+    ©2025 by tranquocthang
+  </div>
+</footer>
 
 </body>
 </html>
