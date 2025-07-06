@@ -8,22 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="projects.css">
 </head>
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // chỉ hiện 1 lần
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  document.querySelectorAll('.project-card').forEach(card => {
-    observer.observe(card);
-  });
-</script>
 <body>
 
 <header class="site-header">
@@ -80,6 +64,21 @@
     ©2025 by tranquocthang
   </div>
 </footer>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // chỉ hiện 1 lần
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
 
+  document.querySelectorAll('.project-card').forEach(card => {
+    observer.observe(card);
+  });
+</script>
 </body>
 </html>
