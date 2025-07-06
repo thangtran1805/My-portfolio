@@ -1,0 +1,127 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8ded2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.site-header {
+  background-color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo i {
+  color: #2f56ff;
+  margin-right: 8px;
+}
+.logo .title {
+  color: #777;
+  font-weight: 400;
+}
+.nav-menu a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #2f56ff;
+}
+.projects-page {
+  background-color: #e8ded2;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+.projects-page h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.project-card {
+  background: #f3e5d8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.project-thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.project-card h3 {
+  margin: 16px;
+  font-size: 20px;
+}
+.project-card p {
+  flex-grow: 1;
+  margin: 0 16px 16px;
+  color: #555;
+}
+.btn-view {
+  margin: 0 16px 16px;
+  padding: 10px;
+  background-color: #2f56ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+}
+.btn-view:hover {
+  background-color: #2749cc;
+}
+footer {
+  padding: 30px 0;
+  background-color: #fff;
+  text-align: center;
+}
+footer hr {
+  margin-bottom: 20px;
+}
+.footer-info {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.footer-info div {
+  text-align: center;
+}
+.footer-info strong {
+  display: block;
+  margin-bottom: 5px;
+}
+.footer-info a {
+  color: black;
+  margin: 0 5px;
+  font-size: 18px;
+}
+.copyright {
+  font-size: 14px;
+  color: gray;
+}
