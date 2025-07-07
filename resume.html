@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume - Tran Quoc Thang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">
+    <i class="fas fa-user-tie"></i>
+    <span><strong>Tran Quoc Thang</strong> <span class="slash">/</span> <span class="title">Data Engineer</span></span>
+  </div>
+  <nav class="nav-menu">
+    <a href="index.html">ABOUT ME</a>
+    <a href="resume.html" class="active">RESUME</a>
+    <a href="projects.html">PROJECT</a>
+    <a href="learn.html">LEARN</a>
+  </nav>
+</header>
+
+<main class="resume-page">
+  <h1>My Resume</h1>
+
+  <div class="resume-section download-cv">
+    <a class="btn-download" href="assets/img/Resume.jpg" download>📄 Download CV (PDF)</a>
+  </div>
+
+  <div class="resume-section education">
+    <h2>🎓 Education</h2>
+    <ul>
+      <li><strong>Đại học Tôn Đức Thắng (TDTU)</strong> - Ngành Toán Ứng Dụng (Thống kê)</li>
+      <li>Tốt nghiệp năm 2024</li>
+    </ul>
+  </div>
+
+  <div class="resume-section skills">
+    <h2>🛠 Skills</h2>
+    <ul class="skill-list">
+      <li>SQL, PostgreSQL, MySQL</li>
+      <li>Python, Pandas, NumPy</li>
+      <li>ETL Pipelines, Airflow, DuckDB</li>
+      <li>Amazon S3</li>
+      <li>Git, GitHub Actions</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <hr>
+  <div class="footer-info">
+    <div><strong>Call</strong> 090 822 1175</div>
+    <div><strong>Write</strong> thangtranquoc1805@gmail.com</div>
+    <div>
+      <strong>Follow</strong><br>
+      <a href="https://github.com/thangtran1805" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="www.linkedin.com/in/thắng-trần-quốc-69807a344" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+  <div class="copyright">©2025 by tranquocthang</div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.resume-section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+</body>
+</html>

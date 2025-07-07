@@ -1,0 +1,94 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8ded2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.site-header {
+  background-color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.nav-menu a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #2f56ff;
+}
+.resume-page {
+  background-color: #e8ded2;
+  padding: 60px 20px;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.resume-page h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.resume-section {
+  background: #f3e5d8;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.resume-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.resume-section h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+.resume-section ul {
+  padding-left: 20px;
+}
+.skill-list li {
+  margin-bottom: 8px;
+}
+.btn-download {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #2f56ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-download:hover {
+  background-color: #2749cc;
+}
+footer {
+  padding: 30px 0;
+  background-color: #fff;
+  text-align: center;
+}
+.footer-info {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.footer-info strong {
+  display: block;
+  margin-bottom: 5px;
+}
+.footer-info a {
+  color: black;
+  margin: 0 5px;
+  font-size: 18px;
+}
