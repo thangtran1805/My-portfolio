@@ -5,14 +5,14 @@
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: #264653;
+  background: #f2ebe5;
   color: #333;
   line-height: 1.6;
 }
 
 /* ===== Header ===== */
 header {
-  background: white;
+  background: #264653;
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
